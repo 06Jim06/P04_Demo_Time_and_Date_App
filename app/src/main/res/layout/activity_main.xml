@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <DatePicker
+                android:id="@+id/dateP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+
+                />
+
+            <TimePicker
+                android:id="@+id/timeP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:timePickerMode="spinner"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/ButtonDisplayDate"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="@string/display_date" />
+
+                <Button
+                    android:id="@+id/ButtonDisplayTIme"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="@string/display_time" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnRe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reset" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="TextView" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
